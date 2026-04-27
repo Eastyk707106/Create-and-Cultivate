@@ -1,24 +1,130 @@
-# Compiled class file
-*.class
+# ===================================
+# Minecraft 整合包专用 .gitignore
+# 适用于 "Create & Cultivate" 整合包
+# ===================================
 
-# Log file
-*.log
+# 1. 核心游戏文件（由启动器管理）
+versions/
+libraries/
+assets/
+client.jar
+# 注意：不要忽略 assets/ 如果你有自定义资源包，但启动器的 assets 必须忽略
 
-# BlueJ files
-*.ctxt
+# 2. 运行时生成文件
+logs/
+debug/
+crash-reports/
+hs_err_*.log
+launcher_*.log
+launcher_java_*.log
+debug.log
+latest.log
+# 自动生成的统计和配置文件
+stats/
+usernamecache.json
+usercache.json
+# 整合包管理器文件
+packmenu/
+# 光影和资源包缓存
+shaderpacks/
+resourcepacks/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# 3. 用户配置和个人数据
+options.txt
+optionsof.txt
+optionsshaders.txt
+servers.dat
+# 个人按键设置
+config/*.cfg
+config/*.json
+# 但保留你的整合包默认配置
+!config/*.toml
+!config/*.yml
+!config/*.yaml
+!config/*.json5
+# 特定模组的用户数据
+config/jei/
+config/journeymap/
+config/xaerominimap/
+config/xaeroworldmap/
+config/minimap/
+config/litematica/
+config/rei/
+config/roughlyenoughitems/
+# AE2 用户数据
+config/AppliedEnergistics2/client.json
+# 机械动力用户数据
+config/create/schematics/
+# Alex's Mobs 用户数据
+config/alexsmobs/
+# 农夫乐事用户数据
+config/farmersdelight/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# 4. 世界和地图数据
+saves/
+backups/
+# 但如果你想分享示例世界，可以创建 saves/example_world/ 并添加 !saves/example_world/
+# 地图数据
+journeymap/
+XaeroWaypoints/
+VoxelMap/
+# 结构文件
+schematics/
+blueprints/
+
+# 5. 缓存和临时文件
+config/sodium-options.json
+config/embeddium-options.json
+config/iris-options.json
+# 光影缓存
+shaderCache/
+# 光影配置文件
+optionsshaders.txt
+# 性能监控数据
+spark/
+
+# 6. 操作系统自动生成文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+*~
+
+# 7. IDE 和编辑器文件
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# 8. Git 相关
+.git/
+
+# 9. 临时文件和输出
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+# 整合包导出文件
 *.zip
-*.tar.gz
+*.mrpack
+!Create_and_Cultivate_v*.mrpack  # 保留版本发布文件
+# 压缩包
 *.rar
+*.7z
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# 10. Java 相关
+*.class
+*.jar
+!mods/*.jar  # 但保留 mods/ 目录下的模组文件
+
+# 11. Windows 特定
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.stackdump
