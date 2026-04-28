@@ -19,4 +19,12 @@
 - 本整合包使用 **MIT 许可证**，详情见 `LICENSE` 文件。
 
 ## 🐛 反馈与帮助
-如果您遇到任何问题或有建议，请在GitHub仓库的 [Issues](https://github.com/你的用户名/仓库名/issues) 页面提交。
+如果您遇到任何问题或有建议，请在GitHub仓库的 [Issues](https://github.com/Eastyk707106/Create-and-Cultivate/issues) 页面提交。
+
+## 💖 支持这个项目
+
+如果 **Create & Cultivate** 整合包给你带来了快乐，可以考虑赞助我一杯咖啡，这将直接支持我投入更多时间进行更新和维护。
+
+[![在爱发电上支持我](https://img.shields.io/badge/爱发电-赞助作者-946ce6?style=for-the-badge&logo=afdian&logoColor=white)](https://ifdian.net/a/mengyun)
+
+> 爱发电是一个按月赞助平台，您可以随时取消。
